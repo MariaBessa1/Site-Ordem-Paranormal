@@ -1,4 +1,3 @@
-
 :root{
     --cor-fundo:#290606;
     --cor-fonte:#ffffff;
@@ -88,12 +87,10 @@ body {
 }
 
 .corpo {
-    min-height: 100vh;
     background: linear-gradient( 90deg, rgba(13,3,3,1) 0%, rgba(13,3,3,1) 25%, rgba(41,6,6,1) 100%);
-    display:block;
-    align-items: center;
+    display:flex;
     margin-top: 4%;
-    padding-bottom: 5%;
+    padding-bottom: 4%;
 }
 
 .linhadeco {
@@ -104,57 +101,67 @@ body {
     background: #a71010;
 }
 
-.titulos {
-    padding: 4%;
-    text-align: center;
-    font-size: 40px;
-    font-family: Georgia;
-    text-shadow: 0px 0px 10px #a71010;
-    margin-bottom: 3%;
-}
 
-.textos-sobre {
-    display:flex;
-    flex-direction: row-reverse;
-    max-width: 200vh;
-}
-
-.textos-sobre p { /*textos*/
-    margin-top: 4%;
-    margin-left: 7%;
-    margin-right: 7%;
-    font-size: 19px;
-    line-height: 1.8;
-    text-indent: 5%;
-    text-align: justify;
-
+.sobre h2{
+   display: flex;
+   text-align: center;
+   font-size: x-large;
+   margin-left: 1570%;
 }
 
 
-.textos img { 
-    margin-right: 7%;
+.imgsobre {
+    display: flex;
+    margin-top: 5%;
+    
+
+}
+
+.textos-sobre { /*textos*/
+   display: flex;
+   margin-left: 20px;
+   flex-flow: row wrap;
+   margin-top: 10%;
+   font-size: 19px;
+   line-height: 1.8;
+   text-indent: 5%;
+   text-align: justify;
+   
+    
 
 }
 
 /*--------------TEMPORADAS-----------------*/
 
+.titulos {
+    padding: 5%;
+    text-align: center;
+    font-size: 35px;
+    font-family: Georgia;
+    text-shadow: 0px 0px 10px #a71010;
+}
+
+
 .corpo2 {
     min-height: 100vh;
     background-color: black;
     display: block;
-    padding-bottom: 7%;
+    padding-bottom: 2px;
 }
 
 #temporadas {
     display: inline-block;
 }
 
-.corpo2 a img{
-    display: inline-block;
-    margin-right: 1%;
-    margin-bottom: 1%;
-    align-items: center;
-}
+.temporadasimg {
+    display: flex;
+    height: 600px;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    margin-left: 11%;
+    margin-right: 10%;
+    gap: 10px;
+} 
 
 /*---------------PRODUTOS---------------*/
 
@@ -194,6 +201,7 @@ button {
     background-color: #a71010;
     font-size: 20px;
     font-family: Georgia;
+    text-decoration: none;
     color: #ffffff;
     cursor: pointer;
     transition: transform 200ms ease-in-out; /*Altera o transform do hover abaixo*/
