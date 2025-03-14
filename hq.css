@@ -1,0 +1,90 @@
+:root{
+    --cor-fundo:#290606;
+    --cor-fonte:#ffffff;
+    --cor-hover:#810b0b;
+
+}
+* {
+    padding: 0px;
+    margin:0px;
+}
+
+section {
+    padding: 30px 20px;
+
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-fundo) ;
+    color: var(--cor-fonte);
+    height:100vh;
+   
+}
+
+.container { /*O menu de cima*/
+    display: flex;
+    align-items: center;
+    padding: 2% 2%;
+    background: linear-gradient(90deg, rgba(13,3,3,1) 0%, rgba(13,3,3,1) 25%, rgba(41,6,6,1) 100%);
+  
+}
+
+.menu { /*As configurações do menu de cima*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.menu__link { /*As palavras do menu de cima*/ 
+  color: var(--cor-fonte);
+  font-size: 23px;
+  font-family:'Times New Roman';
+  display:inline;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin: 15px;
+
+}
+
+.menu__link:hover{ /*Altera a cor das palavras no menu quando passa o mouse*/
+    color: var(--cor-hover);
+  }
+
+.logo img{
+    height: 70px;
+}
+
+.menu__link:hover .submenu{ /*Faz aparecer o submenu assim que o mouse passa por cima do menu*/
+    display:block;
+}
+
+.submenu{
+    position: absolute;
+    box-shadow: 0 0 2px black;
+    background-color: rgb(59, 7, 7);
+    display: none; /*O elemento nao gera caixa */
+}
+
+.submenu a{
+    display: block; /*p exibir na vertical */
+    color: var(--cor-fonte);
+    text-decoration:none;
+    padding: 10px;
+}
+
+.submenu a:hover{
+   background-color: var(--cor-hover)
+}
+
+/*--------------------CORPO------------------*/
+
+.titulo-principal {
+    text-align: center;
+    font-size: 40px;
+    font-family: Georgia;
+    text-shadow: 0px 0px 10px #a71010;
+    margin-bottom: 3%;
+}

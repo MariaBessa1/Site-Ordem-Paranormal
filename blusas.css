@@ -1,0 +1,79 @@
+:root{
+    --cor-fundo:#290606;
+    --cor-fonte:#ffffff;
+    --cor-hover:#5A0909;
+
+}
+* {
+    padding: 0px;
+    margin:0px;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-fundo) ;
+    color: var(--cor-fonte);
+    height:100vh;
+   
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 2% 2%;
+    background: linear-gradient(90deg, rgba(13,3,3,1) 0%, rgba(13,3,3,1) 25%, rgba(41,6,6,1) 100%);
+  
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.menu__link {
+  color: var(--cor-fonte);
+  font-size: 23px;
+  font-family:'Times New Roman';
+  display:inline;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin: 15px;
+
+}
+
+.menu__link:hover{
+    color: var(--cor-hover);
+    border-radius: 10% 10%;
+    height: 50% 50%;
+  }
+
+.logo img{
+    height: 70px;
+}
+
+.menu__link:hover .submenu{
+    display:block;
+}
+
+.submenu{
+    position: absolute;
+    box-shadow: 0 0 2px black;
+    background-color: rgb(59, 7, 7);
+    display: none; /*O elemento nao gera caixa */
+}
+
+.submenu a{
+    display: block; /*p exibir na vertical */
+    color: var(--cor-fonte);
+    text-decoration:none;
+    padding: 10px;
+}
+
+.submenu a:hover{
+   background-color: var(--cor-hover)
+}
